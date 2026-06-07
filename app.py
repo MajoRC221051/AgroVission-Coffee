@@ -492,13 +492,14 @@ st.markdown("<br>",unsafe_allow_html=True)
 # TABS
 # =====================================================
 
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🌿 Invernadero Virtual",
     "📈 Clima",
     "💧 Suelo",
-    "🛰️ NDVI"
+    "🛰️ NDVI",
+    "🗺️ Mapa"
+    "🚨 Riesgos"
 ])
-
 # =====================================================
 # TAB 1
 # =====================================================
@@ -772,7 +773,7 @@ with tab4:
 # TAB MAPA
 # =====================================================
 
-with tab4:
+with tab5:
 
     st.markdown(
         '<div class="section-title">🗺️ Mapa Climático</div>',
@@ -968,7 +969,7 @@ st.plotly_chart(
 # TAB RIESGOS
 # =====================================================
 
-with tab5:
+with tab6:
 
     st.markdown(
         '<div class="section-title">🚨 Evaluación de Riesgos</div>',
